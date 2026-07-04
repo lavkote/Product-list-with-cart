@@ -1,0 +1,80 @@
+*{
+    font-family: 'Red Hat Text', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    margin:5%;
+}
+
+h1,h2,h3{
+    display: block;
+    font-weight: 700;
+    padding: 0 0 30px 0;
+}
+h3{
+    display: flex;
+    justify-self: flex-start;
+    padding: 5px 0;
+}
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    gap:20px;
+    width: 60%;
+    place-items: center center;
+    flex: 2;
+}
+ul,li{
+    list-style:none;
+}
+.card{
+    place-items: center center;
+}
+.container_img{
+    display:flex; 
+    flex-direction: column;
+    place-items: center center;
+}
+button.add_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:-10%;
+    margin-bottom: 5%;
+    border-width:1px;
+    width:70%;
+    height:fit-content;
+    padding: 4% 1%;
+    border-radius: 25px;
+    background: #ffffff;
+    font-size: 16px;
+}
+.add_to_cart{
+    margin-right: 5%;
+    width:15%;
+    height:15%;
+}
+.img_item{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.type{
+    font-size: 13px;
+    font-weight: 100;
+}
+.price::before{
+    content: "$";
+}
+.price{
+    color: hsl(14, 86%, 42%);
+    font-weight: 700;
+}
+.order_cart{
+    display: inline;
+    flex: 1;
+
+}
