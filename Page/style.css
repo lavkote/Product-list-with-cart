@@ -3,9 +3,14 @@
     padding: 0;
     margin: 0;
 }
-
+body{
+    background: hsl(20, 50%, 98%);
+}
 main{
     margin:5%;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 h1,h2,h3{
@@ -18,14 +23,18 @@ h3{
     justify-self: flex-start;
     padding: 5px 0;
 }
+h2{
+    color:hsl(14, 86%, 42%);
+}
+.content{
+    width: 60%;
+}
 .product-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 0.5fr);
     gap:20px;
-    width: 60%;
     place-items: center center;
-    flex: 2;
 }
 ul,li{
     list-style:none;
@@ -60,7 +69,7 @@ button.add_item{
 .img_item{
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 .type{
     font-size: 13px;
@@ -74,7 +83,25 @@ button.add_item{
     font-weight: 700;
 }
 .order_cart{
-    display: inline;
-    flex: 1;
+    padding: 2%;
+    background: #fff;
+    width: 30%;
+    height: fit-content;
+    border-radius: 6px;
+}
+.order_cart p{
+    place-self: center center;
+    padding: 20px;
+    font-weight: 600;
+    color: hsl(12, 20%, 44%);
+}
+.order_cart img{
+    display: block;
+    margin: 0 auto;
 
+}
+/*___________selected_________*/
+.add_item:active{
+    border-style: none;
+    background: hsl(14, 86%, 42%);
 }
