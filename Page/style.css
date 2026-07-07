@@ -102,6 +102,6 @@ button.add_item{
 }
 /*___________selected_________*/
 .add_item:active{
-    border-style: none;
+    border-style: hsla(0, 0%, 100%, 0);
     background: hsl(14, 86%, 42%);
 }
