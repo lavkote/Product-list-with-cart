@@ -71,7 +71,7 @@ ul,li{
     flex-direction: column;
     place-items: center center;
 }
-button.add_item{
+.add_item{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,6 +149,9 @@ button.add_item{
 .add_item:active{
     border-color: hsla(0, 0%, 100%, 0);
     background: hsl(14, 86%, 42%);
-    
 }
+.img_item_active{
+    display:none;
+    border: 1px solid hsl(14, 86%, 42%);
+    }
 /*___________mobile_________*/
