@@ -27,6 +27,7 @@ h3{
     display: flex;
     justify-self: flex-start;
     padding: 5px 0;
+    
 }
 h2{
     color:hsl(14, 86%, 42%);
@@ -42,7 +43,7 @@ h1{
     }
 }
 .content{
-    width: 60%;
+    width: 65%;
     @media (max-width: 375px){
        width: 100%; 
     }
